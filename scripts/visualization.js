@@ -28,7 +28,7 @@ var cDelay=0;  //this is the update on every dic change so that visualizationis 
 
 function divUpdate(cont,height,color){
     window.setTimeout(function() {
-        cont.style="margin: 0%" + marginSize + "%; width: "+(100/arraySize-(2*marginSize))+"%; height:" + height + "%; background-color:"+ color + ";";
+        cont.style="margin: 0% " + marginSize + "%; width: "+(100/arraySize-(2*marginSize))+"%; height:" + height + "%; background-color:" + color + ";";
     }, cDelay+=delayTime);
 }
 

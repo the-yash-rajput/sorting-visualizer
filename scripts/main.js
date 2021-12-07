@@ -23,7 +23,7 @@ function generateArray(){
     cont.innerHTML="";
 
     for(var i=0;i<arraySize;i++){
-        divSizes[i]=Math.floor(Math.random *0.5*(inpAs.max-inpAs.min))+10;
+        divSizes[i]=Math.floor(Math.random *0.5*((inpAs.max) - (inpAs.min)))+10;
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         marginSize=0.1;
