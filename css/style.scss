@@ -69,7 +69,29 @@ nav{
                     background-color: blue;
                     cursor: pointer;
                 }
-            }   
+            } 
+            .buttLocked{
+                background-color: transparent;
+                cursor: pointer;
+                &:hover{
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }  
+            .buttSelected{
+                background-color: white;
+                color: green;
+                &:hoevr{
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
+            .buttUnselected{
+                &:hover{
+                    background-color: blue;
+                    cursor: pointer;
+                }
+            }
         }
         #heap{
             margin-right: 0px;

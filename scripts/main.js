@@ -2,8 +2,9 @@
 var inpAs=document.getElementById("arraySize"),arraySize=inpAs.value;
 var inpGen=document.getElementById("algorithmGenerate");
 var inpAspeed=document.getElementById("algorithmSpeed");
+// var arraySpeed = document.getElementById("algorithmSpeed").value;
 
-var buttsAlgos=document.querySelectorAll(".algos");
+var buttsAlgos=document.querySelectorAll(".algos button");
 
 var divSizes=[];
 var divs=[];
