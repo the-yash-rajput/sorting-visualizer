@@ -1,0 +1,96 @@
+:root {
+    --backgroundColour: rgb(59,58,58);
+}
+$no_algos: 6;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav{
+    background-color: var(--backgroundColour);
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 10%;
+    padding: 0% 5%;
+    
+    .arrayInputs{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-content: center;
+        padding: 5% 0%;
+
+        #arraySize{
+            padding: 5% 0%;
+        }
+
+        #algorithmSpeed{
+            padding: 5% 0%;
+        }
+        #algorithmGenerate{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 4% 0% 0% 0%;
+            padding-left: 20%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .headerRight{
+        display: flex;
+        flex-direction: column;
+
+        .navHeading{
+            display: inline-block;
+            font-size: xxx-large;
+            padding: 3% 0%;
+        }
+        .algos{
+            display: grid;
+            grid-template-columns: repeat($no_algos,(100%/$no_algos));
+            place-content: center;
+            padding: 2% 0%;
+            .button{
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+                padding: 5% 0%;
+                font-size: x-large;
+                &:hover{
+                    background-color: blue;
+                    cursor: pointer;
+                }
+            }   
+        }
+        #heap{
+            margin-right: 0px;
+        }
+    }
+
+}
+
+section{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    #infoCont{
+        padding: 20%;
+    }
+    #arrayContainer{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+.hide{
+    display: none;
+}
