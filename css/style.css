@@ -73,7 +73,7 @@ nav .headerRight .algos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (16.66667%)[6];
-      grid-template-columns: repeat(6, 16.66667%);
+  grid-template-columns: repeat(6, 16.66667%);
   place-content: center;
   padding: 2% 0%;
 }

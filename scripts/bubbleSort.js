@@ -1,4 +1,6 @@
-function Bubble(){
+//Bubble Sort..
+
+function Bubble() {
     cDelay = 0;
     
     for (var i = 0; i < arraySize - 1; i++) {
