@@ -35,7 +35,7 @@ nav{
             background-color: transparent;
             border: none;
             outline: none;
-            color: white;
+            color: blue;
             padding: 4% 0% 0% 0%;
             padding-left: 20%;
             &:hover{
@@ -70,7 +70,7 @@ nav{
                     cursor: pointer;
                 }
             } 
-            .buttLocked{
+            .butt_locked{
                 background-color: transparent;
                 cursor: pointer;
                 &:hover{
@@ -78,7 +78,7 @@ nav{
                     cursor: pointer;
                 }
             }  
-            .buttSelected{
+            .butt_selected{
                 background-color: white;
                 color: green;
                 &:hoevr{
@@ -86,7 +86,7 @@ nav{
                     cursor: pointer;
                 }
             }
-            .buttUnselected{
+            .butt_unselected{
                 &:hover{
                     background-color: blue;
                     cursor: pointer;

@@ -23,11 +23,12 @@ function generateArray(){
     cont.innerHTML="";
 
     for(var i=0;i<arraySize;i++){
-        divSizes[i]=Math.floor(Math.random *0.5*((inpAs.max) - (inpAs.min)))+10;
+        // divSizes[i] = Math.floor(Math.random * (0.5) * ((inpAs.max) - (inpAs.min))) + 10;
+        divSizes[i]=Math.floor(Math.random() * 0.5*(inpAs.max - inpAs.min) ) + 10;
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         marginSize=0.1;
-        divs[i].style="margin: 0% " + marginSize + "%; backgroung-color:blue; width:" + (100/arraySize-(2*marginSize)) + "%; height:" + (divSizes[i])+ "%;";
+        divs[i].style=" margin:0% " + marginSize + "%; background-color:blue; width:" + (100/arraySize-(2*marginSize)) + "%; height:" + (divSizes[i]) + "%;";
     }
 }
 
