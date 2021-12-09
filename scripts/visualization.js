@@ -8,15 +8,15 @@ function visSpeed() {
     var arraySpeed=inpAspeed.value;
     switch (parseInt(arraySpeed)) {
         case 1: speed=1;
-        break;
+                break;
         case 2: speed=10;
-        break;
+                break;
         case 3: speed=100;
-        break;
+                break;
         case 4: speed=1000;
-        break;
+                break;
         case 5: speed=10000;
-        break;
+                break;
        
     }
     delayTime=10000/(Math.floor(arraySize/10)*speed); 
@@ -26,8 +26,9 @@ var  delayTime=10000/(Math.floor(arraySize/10)*speed); ;
 var cDelay=0;  //this is the update on every dic change so that visualizationis visible.
 
 function divUpdate(cont,height,color){
-    window.setTimeout(function() {
+    window.setTimeout(function () {
         cont.style=" margin:0% " + marginSize + "%; width:" + (100/arraySize-(2*marginSize)) + "%; height:" + height + "%; background-color:" + color + ";";
+        // cont.style=" margin:0% " + marginSize + "%; width:" + (100/arraySize-(2*marginSize)) + "%; height:" + height + "%; background-color:" + color + ";";
     }, cDelay+=delayTime);
 }
 

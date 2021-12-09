@@ -9,8 +9,8 @@ function Insertion() {
 
         var key = divSizes[j];
         var i = j - 1;
-        whhile(i >= 0 && divSizes[i] > key){
-    
+        while(i >= 0 && (divSizes[i] > key))
+        {
             divUpdate(divs[i], divSizes[i], "red");//colour update
             divUpdate(divs[i+1], divSizes[i+1], "red");//colour update
             

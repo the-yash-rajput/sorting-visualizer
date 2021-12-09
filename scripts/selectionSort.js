@@ -1,5 +1,5 @@
 //selection sort
-function SelectionSort() {
+function Selection() {
     cDelay = 0;
 
     for (var i = 0; i < arraySize - 1; i++){

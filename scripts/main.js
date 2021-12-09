@@ -1,5 +1,5 @@
 // variables 
-var inpAs=document.getElementById("arraySize"),arraySize=inpAs.value;
+var inpAs=document.getElementById("a_Size"),arraySize=inpAs.value;
 var inpGen=document.getElementById("algorithmGenerate");
 var inpAspeed=document.getElementById("algorithmSpeed");
 // var arraySpeed = document.getElementById("algorithmSpeed").value;
@@ -23,8 +23,7 @@ function generateArray(){
     cont.innerHTML="";
 
     for(var i=0;i<arraySize;i++){
-        // divSizes[i] = Math.floor(Math.random * (0.5) * ((inpAs.max) - (inpAs.min))) + 10;
-        divSizes[i]=Math.floor(Math.random() * 0.5*(inpAs.max - inpAs.min) ) + 10;
+        divSizes[i] = Math.floor(Math.random() * (0.5) * ((inpAs.max) - (inpAs.min))) + 10;
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         marginSize=0.1;
@@ -48,10 +47,10 @@ for(var i=0;i<buttsAlgos.length;i++){
 function disableButtons(){
     for(var i=0;i<buttsAlgos.length;i++){
         buttsAlgos[i].classList=[];
-        buttsAlgos[i].classList.add("buttLocked");
+        buttsAlgos[i].classList.add("butt_locked");
 
         buttsAlgos[i].disabled=true;
-        inpAs[i].disabled=true;
+        inpAs.disabled=true;
         inpGen.disabled=true;
         inpAspeed.disabled=true;
     }
@@ -60,19 +59,20 @@ function disableButtons(){
 function runalgo(){
     disableButtons();
 
-    this.classList.add("buttSelected");
+    this.classList.add("butt_selected");
+    console.log(this.innerHTML);
     switch(this.innerHTML){
         case "Bubble":Bubble();
-            break;
-        case "Selection":SelectionSort();
-            break;
+                        break;
+        case "Selection":Selection();
+                        break;
         case "Insertion":Insertion();
-            break;
+                        break;
         case "Merge":Merge();
-            break;
+                        break;
         case "Quick":Quick();
-            break;
+                        break;
         case "Heap":Heap();
-            break;
+                        break;
     }
 }

@@ -11,6 +11,8 @@ function Bubble() {
                 divUpdate(divs[j], divSizes[j], "red"); //colour update
                 divUpdate(divs[j + 1], divSizes[j + 1], "red"); // colour update
 
+
+                //swaping elememts..
                 var tem = divSizes[j];
                 divSizes[j] = divSizes[j + 1];
                 divSizes[j + 1] = tem;
